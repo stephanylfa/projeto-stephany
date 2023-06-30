@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 150px; 
+}
+
+/* MENU */
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #ffffff;
+}
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b815ab;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #fb6ced, #b815b0);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+
+.change .bar {
+    background-color: white;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+/*FIM MENU*/
+
+
+/*RODAPÉ*/
+footer {
+    background-color: #f7e1fd96;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*FIM RODAPÉ*/
+
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+h1 {
+    font-size: 200px; 
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    user-select: none;
+    text-align: center;
+    margin-top: 200px; 
+}
+
+h1 span { 
+    display:inline-block; 
+    animation:float .2s ease-in-out infinite; 
+}
+
+@keyframes float {
+
+    0%,100%{ 
+        transform:none; 
+    }
+    33%{ 
+        transform:translateY(-1px) rotate(-2deg); 
+    }
+    66%{ 
+        transform:translateY(1px) rotate(2deg); 
+    }
+}
+
+body:hover span {
+    animation:bounce .6s; 
+}
+@keyframes bounce {
+
+    0%,100%{ 
+        transform:translate(0); 
+    }
+    25%{ 
+        transform:rotateX(20deg) translateY(2px) rotate(-3deg); 
+    }
+    50%{ 
+        transform:translateY(-20px) rotate(3deg) scale(1.1);
+    }
+}
+
+span:nth-child(4n) {
+    color: hsl(290, 75%, 55%); 
+    text-shadow: 1px 1px hsl(290, 75%, 45%), 2px 2px hsl(290, 45%, 45%), 3px 3px hsl(290, 45%, 45%), 4px 4px hsl(290, 75%, 45%);
+}
+    
+span:nth-child(4n-1) {
+    color: hsl(310, 35%, 55%); 
+    text-shadow: 1px 1px hsl(310, 35%, 45%), 2px 2px hsl(310, 35%, 45%), 3px 3px hsl(310, 35%, 45%), 4px 4px hsl(310, 35%, 45%);
+}
+    
+span:nth-child(4n-2) {
+    color: hsl(320, 35%, 60%); 
+    text-shadow: 1px 1px hsl(320, 25%, 50%), 2px 2px hsl(320, 25%, 50%), 3px 3px hsl(320, 25%, 50%), 4px 4px hsl(320, 25%, 50%);
+}
+    
+span:nth-child(4n-3) {
+    color: hsl(300, 65%, 60%); 
+    text-shadow: 1px 1px hsl(300, 45%, 50%), 2px 2px hsl(300, 45%, 50%), 3px 3px hsl(300, 45%, 50%), 4px 4px hsl(300, 45%, 50%);
+}
+
+h1 span:nth-child(2){ 
+    animation-delay:.05s; 
+}
+h1 span:nth-child(3){ 
+    animation-delay:.1s; 
+}
+h1 span:nth-child(4){ 
+    animation-delay:.15s; 
+}
+h1 span:nth-child(5){ 
+    animation-delay:.2s; 
+}
+h1 span:nth-child(6){ 
+    animation-delay:.25s; 
+}
+h1 span:nth-child(7){ 
+    animation-delay:.3s; 
+}
+h1 span:nth-child(8){ 
+    animation-delay:.35s; 
+}
+h1 span:nth-child(9){ 
+    animation-delay:.4s; 
+}
+h1 span:nth-child(10){ 
+    animation-delay:.45s; 
+}
+h1 span:nth-child(11){ 
+    animation-delay:.5s; 
+}
+h1 span:nth-child(12){ 
+    animation-delay:.55s; 
+}
+h1 span:nth-child(13){ 
+    animation-delay:.6s; 
+}
+h1 span:nth-child(14){ 
+    animation-delay:.65s; 
+}

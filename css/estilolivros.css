@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 120px;
+}
+
+/* MENU */
+body {
+    font-family: "PT Sans", sans-serif;
+    background-color: #ffffff;
+}
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #b815ab;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1 {
+    transform: translateY(-4px);
+}
+#bar3 {
+    transform: translateY(4px);
+}
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav li a:hover {
+    font-weight: bold;
+}
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+  }
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #fb6ced, #b815b0);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+#menu-bar {
+    z-index: 2;
+}
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+}
+.change .bar {
+    background-color: white;
+}
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+.change #bar2 {
+    opacity: 0;
+}
+.change {
+    display: block;
+}
+/*FIM MENU*/
+
+div h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* título - livros Colleen Hoover */
+
+.site-heading {
+    margin-bottom: 10px;
+    overflow: hidden;
+    /*margin-top: 12px;*/
+    text-align: center;
+}
+
+.site-heading h2 {
+    display: block;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+    
+.site-heading h2 span {
+    /*color: #ff5a6e; */
+    color: #bf68f1;
+}
+
+/*Imagens - galeria*/
+.containerum {
+    text-align: center;
+}
+
+.containerum .heading {
+    font-size: 50px;
+    padding-bottom: 25px;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(233,45,253,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.containerum .container-imagem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.containerum .container-imagem .imagem {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 35px rgba(233, 156, 253, 0.814);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerum .container-imagem img {
+    width: 150px; 
+    height: 225px; 
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.containerum .container-imagem .imagem h3 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+/*Tabela*/
+.tabela {
+    margin: 130px auto;
+}
+
+.tabela-row {
+    display: table;
+    width: 85%;
+    margin: 15px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(255, 255, 255, 0.3);
+}
+
+.table-cell {
+    display: table-cell;
+    width: 100px;
+    text-align: center;
+    padding: 4px 0;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.tabela-head {
+    background-color: #b36bdd;
+    box-shadow: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.tabela-head .table-cell {
+    border-right: none;
+}
+
+/* Botões*/
+.btn button {
+    background: rgb(255, 255, 255);
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    margin-right: 20px;
+}
+
+.btn button:hover {
+    background-color: #c67af1;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn .btn2 {
+    background-color: rgb(227, 190, 248);
+    color: white;
+}
+
+/*RODAPÉ*/
+footer {
+    margin-top: -55px;
+    background-color: #f7e1fd96;
+    padding: 20px;
+    text-align: center;
+}
+/*FIM RODAPÉ*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    .logo {
+        margin: 20px 0;
+    }
+
+    .site-heading h2 {
+        font-size: 25px;
+    }
+
+    .containerum .container-imagem .imagem {
+        width: 100%;
+    }
+
+    .btn button {
+        padding: 15px 25px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .tabela-row {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .table-cell {
+        font-size: 14px;
+    }
+}
